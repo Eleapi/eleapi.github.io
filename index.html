@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrophysics Graduate Student</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --surface: #111827;
+          --text: #e5e7eb;
+          --muted: #94a3b8;
+          --accent: #60a5fa;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(960px, 92vw);
+        margin: 0 auto;
+      }
+
+      header {
+        background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.16), transparent 52%),
+          var(--surface);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.1rem);
+        margin-bottom: 0.5rem;
+      }
+
+      .tagline {
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 0.75rem;
+        padding: 0;
+        margin: 1.25rem 0 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      main {
+        padding: 2.5rem 0 3rem;
+      }
+
+      section {
+        background: var(--surface);
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        border-radius: 12px;
+        padding: 1.25rem 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      .meta {
+        color: var(--muted);
+        margin: 0 0 0.6rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      footer {
+        border-top: 1px solid rgba(148, 163, 184, 0.25);
+        color: var(--muted);
+        padding: 1.5rem 0 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container hero">
+        <h1>Your Name</h1>
+        <p class="tagline">Astrophysics PhD Candidate | Exoplanets, Stellar Dynamics, and Survey Science</p>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am an astrophysics graduate student at <strong>University Name</strong>. My work uses observational and
+          computational methods to study how planetary systems form and evolve around low-mass stars.
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <h3>Current Projects</h3>
+        <ul>
+          <li>Transit timing analysis for multi-planet systems observed by TESS.</li>
+          <li>N-body simulations of planetary migration in protoplanetary disks.</li>
+          <li>Machine-learning assisted classification of variable stars in time-series surveys.</li>
+        </ul>
+        <p class="meta">Advisor: Prof. Jane Smith · Department of Physics and Astronomy</p>
+      </section>
+
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul>
+          <li>
+            Your Name, Coauthor A., Coauthor B. (2026). <em>Characterizing Resonant Exoplanet Pairs with TESS</em>.
+            <strong>The Astrophysical Journal</strong>.
+          </li>
+          <li>
+            Coauthor C., Your Name (2025). <em>Disk-Driven Migration Constraints from Young Planetary Systems</em>.
+            <strong>Monthly Notices of the Royal Astronomical Society</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching & Outreach</h2>
+        <ul>
+          <li>Teaching Assistant, Introductory Astronomy Lab (2024–2026)</li>
+          <li>Guest Presenter, Local Science Museum Public Night</li>
+          <li>Mentor, Undergraduate Research Program in Computational Astrophysics</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:yourname@university.edu">yourname@university.edu</a></p>
+        <p>
+          CV: <a href="#" aria-label="Curriculum vitae">Download PDF</a> ·
+          Google Scholar: <a href="#" aria-label="Google Scholar profile">Profile</a> ·
+          GitHub: <a href="https://github.com/" aria-label="GitHub profile">@yourhandle</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year">2026</span> Your Name</div>
+    </footer>
+  </body>
+</html>
