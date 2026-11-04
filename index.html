@@ -191,6 +191,24 @@
           transform: none;
         }
       }
+      .more-publications {
+      margin-top: 1rem;
+    }
+    
+    .more-publications summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 600;
+      padding: 0.6rem 0;
+      list-style-position: inside;
+    }
+    
+    .more-publications summary:hover {
+      text-decoration: underline;
+    }
+    
+    .more-publications[open] summary {
+      margin-bottom: 0.
     </style>
   </head>
   <body>
@@ -239,8 +257,9 @@
 
       <section id="publications">
         <h2> Publications</h2>
-        <h3>First Author Papers</h3>
-        <ul>
+        <details class="more-publications">
+          <summary>Show co-author publications</summary>
+          <ul>
           <li>
            E. Pike et al. (2026). <strong>JWST/NIRISS-SOSS Spectroscopic Variability and Auroral Modelling of Warm Ultracool Dwarf LSR J1835+3259.</strong>
             <i>MNRAS</i> (under review).
@@ -287,11 +306,11 @@
           <li>
             H.S. Hudson et al. (2022). <strong>Fast prograde coronal flows in solar active regions.</strong> <i>MNRAS Letters</i> 515(1), <a href="https://doi.org/10.1093/mnrasl/slac079" aria-label="DOI: 10.1093/mnrasl/slac079"> doi:10.1093/mnrasl/slac079</a>
           </li>
-        </ul>
+          </ul>
+        </details>
       </section>
-
-
-    <section id="activities">
+    
+      <section id="activities">
       <h2>Academic Activities</h2>
       <p>
         Alongside my research, I have worked as a Graduate Teaching Assistant in computational and observational astronomy, participated in observing runs with the ULTRACAM team, and helped organise meetings for early-career researchers at the University of Sheffield.
